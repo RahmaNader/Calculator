@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calculator</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="calculator.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="application.js">
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form name="form">
+            <input type="text" name="textview" class="display">
+        </form>
+
+        <div class="group">
+            <div class="bigbuttonup"><input type="button" value="Clear" class="button top-function" onclick="clean();"></div>
+            <div class="bigbuttonup"><input type="button" value="Delete" class="button top-function" onclick="back();"></div>
+            <div class="smallbuttonfunction"><input type="button" value="&#247;" class="button side-function" onclick="insert('/')"></div>
+        </div>
+
+        <div class="group">
+            <div class="smallbutton"><input type="button" value="7" class="button digit" onclick="insert(7);"></div>
+            <div class="smallbutton"><input type="button" value="8" class="button digit" onclick="insert(8);"></div>
+            <div class="smallbutton"><input type="button" value="9" class="button digit" onclick="insert(9);"></div>
+            <div class="smallbuttonfunction"><input type="button" value="&#215;" class="button side-function" onclick="insert('*');"></div>
+        </div>
+
+        <div class="group">
+            <div class="smallbutton"><input type="button" value="4" class="button digit" onclick="insert(4);"></div>
+            <div class="smallbutton"><input type="button" value="5" class="button digit" onclick="insert(5);"></div>
+            <div class="smallbutton"><input type="button" value="6" class="button digit" onclick="insert(6);"></div>
+            <div class="smallbuttonfunction"><input type="button" value="&#8722;" class="button side-function" onclick="insert('-');"></div>
+        </div>
+
+        <div class="group">
+
+            <div class="smallbutton"><input type="button" value="1" class="button digit" onclick="insert(1);"></div>
+            <div class="smallbutton"><input type="button" value="2" class="button digit" onclick="insert(2);"></div>
+            <div class="smallbutton"><input type="button" value="3" class="button digit" onclick="insert(3);"></div>
+            <div class="smallbuttonfunction"><input type="button" value="&#43;" class="button side-function" onclick="insert('+');"></div>
+        </div>
+
+        <div class="group">
+            <div class="smallbutton"><input type="button" value="." class="button digit" onclick="insert('.');"></div>
+            <div class="smallbutton"><input type="button" value="0" class="button digit" onclick="insert(0);"></div>
+            <div class="bigbuttonbottom"><input type="button" value="&#61;" class="button bottom-function" onclick="equal();"></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
