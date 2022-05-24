@@ -1,2 +1,2 @@
 # Calculator
-a simple calculator with beautiful css design
+A simple calculator with beautiful css design
